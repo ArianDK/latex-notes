@@ -1,0 +1,72 @@
+\documentclass[fleqn]{article}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\usepackage[top=0.7in, bottom=0.7in, left=0.7in, right=0.7in]{geometry}
+
+\title{Fundamentals of Physics}
+\author{Arian DK}
+\date{\today}
+
+\begin{document}
+\setcounter{section}{2}
+
+\maketitle
+
+\section{Vectors}
+
+\subsection{Vectors and their components}
+\begin{itemize}
+    \item \textbf{Vector} - has magnitude and direction.
+    \item \textbf{Scalar} - quantities that can are fully described by a magnitude (a numerical value alone), without any direction.
+    \item \textbf{Vector sum (resoultant)} - are the product from adding two or more vecotrs.
+\end{itemize}
+\begin{align*}
+\vec{s} &= \vec{a} + \vec{b}, \\[6pt]
+\vec{a} + \vec{b} &= \vec{b} + \vec{a} \quad &\text{(commutative law)} \\[6pt]
+(\vec{a} + \vec{b}) + \vec{c} &= \vec{a} + (\vec{b} + \vec{c}) \quad &\text{(associative law)} \\[6pt]
+\vec{d} &= \vec{a} - \vec{b} = \vec{a} + (-\vec{b}) \quad &\text{(vector subtraction)}
+\end{align*}
+A component of a vector is the projection of a vector on an axis.
+\begin{center}
+Finding the components:\\
+$a_x = a\cos\theta 
+\quad \text{and} \quad 
+a_y = a\sin\theta$
+\end{center}
+If we know a vectors $a_x$ and $a_y$ and want magnitude or angle we can use:
+\begin{center}
+$a = \sqrt{a^2_x + a^2_y} \quad \text{and} \quad \theta = \tan^{-1}(\frac{a_y}{a_x})$
+\end{center}
+
+\subsection{Unit vectors, adding vectors by components}
+\textbf{Unit vector} - is a vector with magnitude of exactly 1.
+\begin{align*}
+      & r_x = a_x + b_x \\
+\vec{r} = \vec{a} + \vec{b} \quad & r_y = a_y + b_y \\
+      & r_z = a_z + b_z
+\end{align*}
+We can write a vector $\vec{a}$ in terms of unit vectors as: $\vec{a} = a_x \hat{i} + a_y \hat{j} + a_z \hat{k}$
+
+\newpage
+\subsection{Multiplying vectors}
+There are two ways of multiplying vectors, one way produces a scalar (scalar product) and the other way produces a new vector (vector product):
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Feature & Scalar product (dot) & Vector product (cross) \\ 
+        \hline
+        Symbol & $\vec{A} \cdot \vec{B}$ & $\vec{A} \times \vec{B}$ \\ \hline
+        Result & Scalar (number) & Vector \\ \hline
+        Formula & $AB\cos\theta$ & $AB\sin\theta$ \\ \hline
+        Component form & 
+        $A_xB_x + A_yB_y + A_zB_z$ & 
+        $(A_yB_z - A_zB_y,\; A_zB_x - A_xB_z,\; A_xB_y - A_yB_x)$ \\ \hline
+    \end{tabular}
+\end{table}
+
+
+
+
+\end{document}
