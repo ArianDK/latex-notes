@@ -1,0 +1,82 @@
+\documentclass[fleqn]{article}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\usepackage[top=0.7in, bottom=0.7in, left=0.7in, right=0.7in]{geometry}
+
+\title{Fundamentals of Physics}
+\author{Arian DK}
+\date{\today}
+
+\begin{document}
+
+\setcounter{section}{1}
+
+\maketitle
+
+\section{Motion Along a Straight Line}
+
+\subsection{Position, displacement, and average velocity}
+
+\begin{equation*}
+    \textrm{Magnitude} \Rightarrow \Delta x_1 - x_2
+\end{equation*}
+\begin{equation*}
+    \textrm{Average velocity} \Rightarrow v_\textrm{avg} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
+\end{equation*}
+\begin{equation*}
+    \textrm{Magnitude} \Rightarrow \frac{\textrm{total distance}}{\Delta t}
+\end{equation*}
+
+\subsection{Instantaneous velocity and speed}
+
+\begin{equation*}
+    \textrm{Instantaneous velocity} \Rightarrow \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{\mathrm{d}x}{\mathrm{d}t}
+\end{equation*}
+
+\subsection{Acceleration}
+\begin{equation*}
+    \textrm{Average acceleration} \Rightarrow a_{\text{avg}} = \frac{v_2 - v_1}{t_2 - t_1} = \frac{\Delta v}{\Delta t}
+\end{equation*}
+\begin{equation*}
+    \textrm{Acceleration at a point} \Rightarrow a = \frac{\mathrm{d}v}{\mathrm{d}t}
+\end{equation*}
+\noindent $\star$ If the signs of the velocity and acceleration of a particle are the same, the speed
+of the particle increases. If the signs are opposite, the speed decreases.
+
+\subsection{Constant acceleration}
+The following five equations describe the motion of a particle with constant acceleration.
+\begin{table*}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Nr & Equation & Missing quantity \\ \hline
+    1 & $v = v_0 + at$ & $x - x_0$  \\ \hline
+    2 & $x - x_0 = v_0 t + \frac{1}{2} at^2$ & $v$ \\ \hline
+    3 & $v^2 = v^2_0 + 2a(x-x_0)$ & $t$ \\ \hline
+    4 & $x-x_0 = \frac{1}{2}(v_0+v_t)t$ & $a$ \\ \hline
+    5 & $x-x_0 = vt-\frac{1}{2}at^2$ & $v_0$ \\ \hline
+    \end{tabular}    
+\end{table*}
+
+\subsection{Free-fall acceleration}
+\noindent $\star$ The free-fall acceleration near Earth’s surface is $a = -g = -9.8~\mathrm{m/s^2}$, and the magnitude of the acceleration is $g = 9.8~\mathrm{m/s^2}$. Do not substitute $-9.8~\mathrm{m/s^2}$ for $g$.
+
+\newpage
+
+\subsection{Graphical integration in motion analysis}
+\begin{multicols}{2}
+
+\noindent $\bullet$ On a graph of acceleration $a$ versus time $t$, the change in the velocity is given by:
+\[
+v_1 - v_0 = \int_{t_0}^{t_1} a\, dt.
+\]
+
+\columnbreak
+
+\noindent $\bullet$ On a graph of velocity $v$ versus time $t$, the change in the position is given by:
+\[
+x_1 - x_0 = \int_{t_0}^{t_1} v\, dt,
+\]
+\end{multicols}
+\end{document}
