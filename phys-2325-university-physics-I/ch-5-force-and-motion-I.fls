@@ -1,0 +1,6 @@
+PWD c:\Users\arian\projects\latex\phys-2325-university-physics-I
+INPUT C:\Users\arian\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\arian\projects\latex\phys-2325-university-physics-I\ch-5-force-and-motion-I.tex
+OUTPUT ch-5-force-and-motion-I.log
+INPUT C:\Users\arian\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\arian\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
