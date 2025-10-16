@@ -1,0 +1,134 @@
+\section{Center of mass and linear momentum}
+\subsection{Center of mass}
+\noindent $\star$ The center of mass of a system of particles is the point that moves as though (1) all of the system’s mass were concentrated there and (2) all external forces were applied there.
+
+The center of mass of a system of \( n \) particles is the weighted average of their positions:
+\[
+x_{\text{com}} = \frac{1}{M} \sum_{i=1}^{n} m_i x_i, \qquad
+y_{\text{com}} = \frac{1}{M} \sum_{i=1}^{n} m_i y_i, \qquad
+z_{\text{com}} = \frac{1}{M} \sum_{i=1}^{n} m_i z_i,
+\]
+or in vector form,
+\[
+\vec{r}_{\text{com}} = \frac{1}{M} \sum_{i=1}^{n} m_i \vec{r}_i,
+\]
+where \( M \) is the total mass of the system.
+
+\subsection{Newton's second law for a system of particles}
+
+The motion of a system’s center of mass follows Newton’s second law:
+\[
+\vec{F}_{\text{net}} = M \vec{a}_{\text{com}},
+\]
+where \( \vec{F}_{\text{net}} \) is the total external force, \( M \) is the total mass, and \( \vec{a}_{\text{com}} \) is the acceleration of the center of mass.
+
+\subsection{Linear momentum}
+\noindent $\star$ The time rate of change of the momentumof a particle is equal to the net force
+acting on the particle and is in the direction of that force.
+
+\noindent $\star$ The linear momentum of a system of particles is equal to the product of the total
+mass M of the system and the velocity of the center of mass.
+
+For a single particle, linear momentum is defined as
+\[
+\vec{p} = m\vec{v},
+\]
+a vector in the same direction as velocity.  
+Newton’s second law can be written as
+\[
+\vec{F}_{\text{net}} = \frac{d\vec{p}}{dt}.
+\]
+
+For a system of particles,
+\[
+\vec{p} = M\vec{v}_{\text{com}}, \qquad \vec{F}_{\text{net}} = \frac{d\vec{p}}{dt}.
+\]
+
+\subsection{Collision and impulse}
+Newton’s second law in momentum form gives the impulse–momentum theorem:
+\[
+\vec{p}_f - \vec{p}_i = \Delta \vec{p} = \vec{J},
+\]
+where impulse is
+\[
+\vec{J} = \int_{t_i}^{t_f} \vec{F}(t)\,dt.
+\]
+For constant average force,
+\[
+J = F_{\text{avg}} \Delta t.
+\]
+
+When multiple bodies of mass \( m \) collide steadily with a fixed object,
+\[
+F_{\text{avg}} = -\frac{n}{\Delta t} m \Delta v = -\frac{\Delta m}{\Delta t} \Delta v.
+\]
+
+\subsection{Conservation of linear momentum}
+\noindent $\star$ If no net external force acts on a system of particles, the total linear momentum $\vec{P}$ of the system cannot change.
+
+\noindent $\star$ If the component of the net external force on a closed system is zero along an
+axis, then the component of the linear momentum of the system along that axis cannot change.
+
+
+In a closed and isolated system (no external forces), the total momentum remains constant:
+\[
+\vec{P} = \text{constant}.
+\]
+
+This can also be written as
+\[
+\vec{P}_i = \vec{P}_f.
+\]
+
+\subsection{Momentum and kinetic energy in collisions}
+In an inelastic collision, kinetic energy is not conserved, but total momentum is:
+\[
+\vec{p}_{1i} + \vec{p}_{2i} = \vec{p}_{1f} + \vec{p}_{2f}.
+\]
+
+For motion along one axis:
+\[
+m_1 v_{1i} + m_2 v_{2i} = m_1 v_{1f} + m_2 v_{2f}.
+\]
+
+If the bodies stick together, the collision is \textit{completely inelastic} and they share a common final velocity \(V\).  
+The velocity of the system’s center of mass remains unchanged during the collision.
+
+\subsection{Elastic collisions in one dimention}
+\noindent $\star$ In an elastic collision, the kinetic energy of each colliding body may change, but
+the total kinetic energy of the system does not change.
+
+In an elastic collision, both kinetic energy and momentum are conserved.  
+For a one-dimensional collision between two bodies (1 and 2), the final velocities are:
+
+\[
+v_{1f} = \frac{m_1 - m_2}{m_1 + m_2} v_{1i}, \qquad
+v_{2f} = \frac{2m_1}{m_1 + m_2} v_{1i}.
+\]
+
+Elastic collisions conserve total energy and momentum within the system.
+
+\subsection{Collisions in two dimentions}
+If two bodies collide and their motion is not along a single axis, the collision is \textit{two-dimensional}.  
+For a closed and isolated system, momentum is conserved in both directions:
+\[
+\vec{p}_{1i} + \vec{p}_{2i} = \vec{p}_{1f} + \vec{p}_{2f}.
+\]
+
+In component form, this gives two equations (for \(x\) and \(y\) directions).  
+If the collision is also elastic, kinetic energy is conserved:
+\[
+K_{1i} + K_{2i} = K_{1f} + K_{2f}.
+\]
+
+\subsection{Systems with various mass: A rocket}
+In the absence of external forces, a rocket’s acceleration is governed by the thrust equation:
+\[
+R v_{\text{rel}} = M a,
+\]
+where \(M\) is the rocket’s instantaneous mass, \(R\) is the fuel consumption rate, and \(v_{\text{rel}}\) is the exhaust speed of the fuel relative to the rocket.
+
+For a rocket with constant \(R\) and \(v_{\text{rel}}\), whose mass changes from \(M_i\) to \(M_f\) while its velocity changes from \(v_i\) to \(v_f\), the velocity change is given by:
+\[
+v_f - v_i = v_{\text{rel}} \ln \frac{M_i}{M_f}.
+\]
