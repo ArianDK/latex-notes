@@ -37,9 +37,60 @@
 
     \item Both $\alpha_{\text{avg}}$ and $\alpha$ are vectors.
 \end{itemize}
+
 \subsection{Rotation with constant angular acceleration}
+\begin{itemize}
+    \item Constant angular acceleration ($\alpha = \text{constant}$) is an important special case of rotational motion. The kinematic equations are analogous to those of linear motion:
+
+    \[
+        \omega = \omega_0 + \alpha t,
+    \]
+    \[
+        \theta - \theta_0 = \omega_0 t + \tfrac{1}{2} \alpha t^2,
+    \]
+    \[
+        \omega^2 = \omega_0^2 + 2\alpha (\theta - \theta_0),
+    \]
+    \[
+        \theta - \theta_0 = \tfrac{1}{2} (\omega_0 + \omega)t,
+    \]
+    \[
+        \theta - \theta_0 = \omega t - \tfrac{1}{2} \alpha t^2.
+    \]
+\end{itemize}
 
 \subsection{Relating the linear and angular variables}
+\begin{itemize}
+    \item A point in a rigid rotating body, at a perpendicular distance $r$ from the rotation axis, moves in a circle of radius $r$.  
+    If the body rotates through an angle $\theta$, the point moves along an arc of length
+    \[
+        s = \theta r \quad \text{(radian measure)},
+    \]
+    where $\theta$ is in radians.
+
+    \item The linear velocity $\vec{v}$ of the point is tangent to the circular path, and its magnitude (the linear speed) is
+    \[
+        v = \omega r \quad \text{(radian measure)},
+    \]
+    where $\omega$ is the angular speed (in radians per second).
+
+    \item The linear acceleration $\vec{a}$ of the point has both tangential and radial components.  
+    The tangential component is
+    \[
+        a_t = \alpha r \quad \text{(radian measure)},
+    \]
+    where $\alpha$ is the angular acceleration (in radians per second squared).  
+    The radial component is
+    \[
+        a_r = \frac{v^2}{r} = \omega^2 r \quad \text{(radian measure)}.
+    \]
+
+    \item For uniform circular motion, the period $T$ (time for one full revolution) is given by
+    \[
+        T = \frac{2\pi r}{v} = \frac{2\pi}{\omega} \quad \text{(radian measure)}.
+    \]
+\end{itemize}
+
 \subsection{Kinetic energy of rotation}
 \subsection{Calculating the rotational of inertia}
 \subsection{Torque}
