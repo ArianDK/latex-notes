@@ -62,3 +62,66 @@ If $u$ is a differentiable function of $x$ such that $u \neq 0$, then
 \[
 \frac{d}{dx}\bigl[\ln|u|\bigr] = \frac{u'}{u}.
 \]
+
+\subsection{The Natural Logarithmic Function: Integration}
+
+\subsection*{Log Rule for Integration}
+
+Let $u$ be a differentiable function of $x$.
+\begin{enumerate}[label=\arabic*.]
+  \item \[
+  \int \frac{1}{x}\,dx \;=\; \ln|x| + C
+  \]
+  \item \[
+  \int \frac{1}{u}\,du \;=\; \ln|u| + C
+  \]
+\end{enumerate}
+
+\subsection*{Alternative Form of the Log Rule}
+
+Since $\dfrac{du}{dx} = u'$, we can write the Log Rule in the following useful form:
+\[
+\int \frac{u'}{u}\,dx \;=\; \ln|u| + C.
+\]
+
+\subsection*{Guidelines for Integration}
+
+\begin{enumerate}[label=\arabic*.]
+  \item Learn a basic list of integration formulas.
+  \item Find an integration formula that resembles all or part of the integrand and, by trial and error, find a choice of $u$ that will make the integrand conform to the formula.
+  \item When you cannot find a $u$-substitution that works, try altering the integrand.
+  
+  You might try a trigonometric identity, multiplication and division by the same quantity, addition and subtraction of the same quantity, or long division.
+  \item When a graphing utility that finds antiderivatives symbolically is available, use it.
+  \item Check your result by differentiating to obtain the original integrand.
+\end{enumerate}
+
+\pagebreak
+
+\subsection*{Integrals of the Six Basic Trigonometric Functions}
+
+\begin{multicols}{2}
+\[
+\int \sin u\,du \;=\; -\cos u + C
+\]
+
+\[
+\int \tan u\,du \;=\; -\ln|\cos u| + C
+\]
+
+\[
+\int \sec u\,du \;=\; \ln|\sec u + \tan u| + C
+\]
+
+\[
+\int \cos u\,du \;=\; \sin u + C
+\]
+
+\[
+\int \cot u\,du \;=\; \ln|\sin u| + C
+\]
+
+\[
+\int \csc u\,du \;=\; -\ln|\csc u + \cot u| + C
+\]
+\end{multicols}

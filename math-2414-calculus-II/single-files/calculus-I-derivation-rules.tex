@@ -1,0 +1,91 @@
+% =========================
+% VERSION 1 (WITH ANSWERS)
+% Calculus I Derivative Rules Sheet
+% =========================
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array, booktabs, multicol}
+\usepackage{enumitem}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Calculus I: Derivative Rules (Differentiation) Formula Sheet}}\\
+\vspace{2mm}
+\textit{Core Calc I rules}
+\end{center}
+
+\vspace{2mm}
+\hrule
+\vspace{2mm}
+
+\section*{1) Basic Facts \& Notation}
+\begin{itemize}[leftmargin=18pt]
+\item \textbf{Derivative (definition):} 
+\[
+f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
+\]
+\item \textbf{Leibniz notation:} \(\displaystyle f'(x)=\frac{dy}{dx}\) when \(y=f(x)\).
+\item \textbf{Higher derivatives:} \(f''(x)\), \(f^{(3)}(x)\), \(\dots\), \(f^{(n)}(x)\).
+\end{itemize}
+
+\section*{2) Core Differentiation Rules (Calc I Essentials)}
+Let \(u=u(x)\), \(v=v(x)\), \(c\) constant.
+
+\begin{tabular}{@{}p{0.34\textwidth}p{0.62\textwidth}@{}}
+\toprule
+\textbf{Rule} & \textbf{Formula} \\
+\midrule
+Constant Rule & \(\displaystyle \frac{d}{dx}[c]=0\) \\[2mm]
+Power Rule & \(\displaystyle \frac{d}{dx}\left[x^n\right]=n x^{n-1}\) (for any real \(n\) where defined) \\[2mm]
+Constant Multiple & \(\displaystyle \frac{d}{dx}[c\,u]=c\,u'\) \\[2mm]
+Sum/Difference & \(\displaystyle \frac{d}{dx}[u\pm v]=u'\pm v'\) \\[2mm]
+Product Rule & \(\displaystyle \frac{d}{dx}[uv]=u'v+uv'\) \\[2mm]
+Quotient Rule & \(\displaystyle \frac{d}{dx}\left[\frac{u}{v}\right]=\frac{u'v-uv'}{v^2}\), \(v\neq 0\) \\[2mm]
+Chain Rule & \(\displaystyle \frac{d}{dx}[f(g(x))]=f'(g(x))\,g'(x)\) \\[2mm]
+\bottomrule
+\end{tabular}
+
+\section*{3) Common Derivatives (Core Table)}
+\subsection*{A) Algebraic / Root Forms}
+\[
+\frac{d}{dx}\left[x^{n}\right]=n x^{n-1},\qquad
+\frac{d}{dx}\left[\sqrt{x}\right]=\frac{1}{2\sqrt{x}},\qquad
+\frac{d}{dx}\left[\frac{1}{x}\right]=-\frac{1}{x^2}
+\]
+
+\subsection*{B) Exponential \& Logarithmic}
+\begin{tabular}{@{}p{0.43\textwidth}p{0.53\textwidth}@{}}
+\toprule
+Function & Derivative \\
+\midrule
+\(\displaystyle e^x\) & \(\displaystyle e^x\) \\[1mm]
+\(\displaystyle a^x\) (\(a>0, a\neq 1\)) & \(\displaystyle a^x\ln(a)\) \\[2mm]
+\(\displaystyle \ln(x)\) & \(\displaystyle \frac{1}{x}\) \\[2mm]
+\(\displaystyle \log_a(x)\) & \(\displaystyle \frac{1}{x\ln(a)}\) \\[2mm]
+\(\displaystyle \ln|u|\) & \(\displaystyle \frac{u'}{u}\) \\[2mm]
+\(\displaystyle e^{u}\) & \(\displaystyle e^{u}\,u'\) \\[2mm]
+\(\displaystyle a^{u}\) & \(\displaystyle a^{u}\ln(a)\,u'\) \\
+\bottomrule
+\end{tabular}
+
+\subsection*{C) Trigonometric}
+\begin{tabular}{@{}p{0.43\textwidth}p{0.53\textwidth}@{}}
+\toprule
+Function & Derivative \\
+\midrule
+\(\sin x\) & \(\cos x\) \\
+\(\cos x\) & \(-\sin x\) \\
+\(\tan x\) & \(\sec^2 x\) \\
+\(\cot x\) & \(-\csc^2 x\) \\
+\(\sec x\) & \(\sec x\tan x\) \\
+\(\csc x\) & \(-\csc x\cot x\) \\
+\bottomrule
+\end{tabular}
+
+\end{document}
