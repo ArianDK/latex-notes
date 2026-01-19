@@ -1,9 +1,19 @@
-# master compendium
-master-compendium.aux
-master-compendium.dvi
-master-compendium.fdb_latexmk
-master-compendium.fls
-master-compendium.log
-master-compendium.out
-master-compendium.synctex.gz
-master-compendium.toc
+# Core LaTeX junk
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Bibliography
+*.bbl
+*.blg
+
+# Latexmk / temp
+*.nav
+*.snm
+*.vrb
