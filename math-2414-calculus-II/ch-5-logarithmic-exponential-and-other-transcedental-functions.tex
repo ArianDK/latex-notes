@@ -1,5 +1,9 @@
 \section{Logarithmic Exponential and Other Transcedental Functions}
 
+%========================================
+% 5.1 The Natural Logarithmic Function: Differentiation
+%========================================
+
 \subsection{The Natural Logarithmic Function: Differentiation}
 
 \subsection*{Definition of the Natural Logarithmic Function}
@@ -25,12 +29,17 @@ The natural logarithmic function has three important properties.
 If $a$ and $b$ are positive numbers and $n$ is rational, then the four properties below are true.
 
 \begin{multicols}{2}
-\begin{enumerate}[label=\arabic*.]
+\begin{itemize}[label={}, leftmargin=*]
+
   \item $\ln 1 = 0$
+
   \item $\ln(ab) = \ln a + \ln b$
+
   \item $\ln(a^n) = n\ln a$
+
   \item $\ln\!\left(\dfrac{a}{b}\right) = \ln a - \ln b$
-\end{enumerate}
+
+\end{itemize}
 \end{multicols}
 
 \subsection*{Definition of $e$}
@@ -43,18 +52,21 @@ The letter $e$ denotes the positive real number such that
 \subsection*{Derivative of the Natural Logarithmic Function}
 
 Let $u$ be a differentiable function of $x$.
-\begin{enumerate}[label=\arabic*.]
+\begin{itemize}[label={}, leftmargin=*]
+
   \item \[
   \frac{d}{dx}\bigl[\ln x\bigr] = \frac{1}{x},
   \qquad x>0
   \]
+
   \item \[
   \frac{d}{dx}\bigl[\ln u\bigr]
   = \frac{1}{u}\frac{du}{dx}
   = \frac{u'}{u},
   \qquad u>0
   \]
-\end{enumerate}
+
+\end{itemize}
 
 \subsection*{Derivative Involving Absolute Value}
 
@@ -63,19 +75,27 @@ If $u$ is a differentiable function of $x$ such that $u \neq 0$, then
 \frac{d}{dx}\bigl[\ln|u|\bigr] = \frac{u'}{u}.
 \]
 
+%========================================
+% 5.2 The Natural Logarithmic Function: Integration
+%========================================
+
 \subsection{The Natural Logarithmic Function: Integration}
 
 \subsection*{Log Rule for Integration}
 
 Let $u$ be a differentiable function of $x$.
-\begin{enumerate}[label=\arabic*.]
+\begin{itemize}[label={}, leftmargin=*]
+
   \item \[
   \int \frac{1}{x}\,dx \;=\; \ln|x| + C
   \]
+
   \item \[
   \int \frac{1}{u}\,du \;=\; \ln|u| + C
   \]
-\end{enumerate}
+
+\end{itemize}
+
 
 \subsection*{Alternative Form of the Log Rule}
 
@@ -125,3 +145,726 @@ Since $\dfrac{du}{dx} = u'$, we can write the Log Rule in the following useful f
 \int \csc u\,du \;=\; -\ln|\csc u + \cot u| + C
 \]
 \end{multicols}
+
+%========================================
+% 5.3 Inverse Functions
+%========================================
+
+\subsection{Inverse Functions}
+
+\subsection*{Definition of Inverse Function}
+
+A function $g$ is the \textbf{inverse function} of the function $f$ when
+\[
+f(g(x)) = x \quad \text{for each $x$ in the domain of $g$}
+\]
+and
+\[
+g(f(x)) = x \quad \text{for each $x$ in the domain of $f$.}
+\]
+
+The function $g$ is denoted by $f^{-1}$.
+
+\subsection*{Reflective Property of Inverse Functions}
+
+The graph of $f$ contains the point $(a,b)$ if and only if the graph of $f^{-1}$
+contains the point $(b,a)$.
+
+\subsection*{The Existence of an Inverse Function}
+
+\begin{enumerate}[label=\arabic*.]
+  \item A function has an inverse function if and only if it is one-to-one.
+  \item If $f$ is strictly monotonic on its entire domain, then it is one-to-one and
+  therefore has an inverse function.
+\end{enumerate}
+
+\subsection*{Guidelines for Finding an Inverse Function}
+
+\begin{enumerate}[label=\arabic*.]
+  \item Use Theorem 5.7 to determine whether the function $y=f(x)$ has an inverse function.
+  \item Solve for $x$ as a function of $y$: $x=g(y)=f^{-1}(y)$.
+  \item Interchange $x$ and $y$. The resulting equation is $y=f^{-1}(x)$.
+  \item Define the domain of $f^{-1}$ as the range of $f$.
+  \item Verify that $f\!\left(f^{-1}(x)\right)=x$ and $f^{-1}(f(x))=x$.
+\end{enumerate}
+
+\subsection*{Continuity and Differentiability of Inverse Functions}
+
+Let $f$ be a function whose domain is an interval $I$. If $f$ has an inverse function,
+then the following statements are true.
+\begin{enumerate}[label=\arabic*.]
+  \item If $f$ is continuous on its domain, then $f^{-1}$ is continuous on its domain.
+  \item If $f$ is increasing on its domain, then $f^{-1}$ is increasing on its domain.
+  \item If $f$ is decreasing on its domain, then $f^{-1}$ is decreasing on its domain.
+  \item If $f$ is differentiable on an interval containing $c$ and $f'(c)\neq 0$, then
+  $f^{-1}$ is differentiable at $f(c)$.
+\end{enumerate}
+
+\subsection*{The Derivative of an Inverse Function}
+
+Let $f$ be a function that is differentiable on an interval $I$. If $f$ has an inverse
+function $g$, then $g$ is differentiable at any $x$ for which $f'(g(x))\neq 0$.
+Moreover,
+\[
+g'(x)=\frac{1}{f'(g(x))}, \qquad f'(g(x))\neq 0.
+\]
+
+%========================================
+% 5.4 Exponential Functions: Differentiation and Integration
+%========================================
+
+\subsection{Exponential Functions: Differentiation and Integration}
+
+\subsection*{Definition of the Natural Exponential Function}
+
+The inverse function of the natural logarithmic function $f(x)=\ln x$ is called the
+\textbf{natural exponential function} and is denoted by
+\[
+f^{-1}(x)=e^x.
+\]
+
+That is, $y=e^x$ if and only if $x=\ln y$.
+
+\subsection*{Operations with Exponential Functions}
+
+Let $a$ and $b$ be any real numbers.
+\begin{itemize}[label={}, leftmargin=*]
+
+  \item \[
+  e^ae^b=e^{a+b}
+  \]
+
+  \item \[
+  \frac{e^a}{e^b}=e^{a-b}
+  \]
+
+\end{itemize}
+
+\subsection*{Properties of the Natural Exponential Function}
+
+\begin{enumerate}[label=\arabic*.]
+  \item The domain of $f(x)=e^x$ is
+  \[
+  (-\infty,\infty)
+  \]
+  and the range is
+  \[
+  (0,\infty).
+  \]
+  \item The function $f(x)=e^x$ is continuous, increasing, and one-to-one on its entire domain.
+  \item The graph of $f(x)=e^x$ is concave upward on its entire domain.
+  \item \[
+  \lim_{x\to -\infty} e^x = 0
+  \]
+  \item \[
+  \lim_{x\to \infty} e^x = \infty
+  \]
+\end{enumerate}
+
+\subsection*{Derivatives of the Natural Exponential Function}
+
+Let $u$ be a differentiable function of $x$.
+\begin{itemize}[label={}, leftmargin=*]
+
+  \item \[
+  \frac{d}{dx}\bigl[e^x\bigr]=e^x
+  \]
+
+  \item \[
+  \frac{d}{dx}\bigl[e^u\bigr]=e^u\frac{du}{dx}
+  \]
+
+\end{itemize}
+
+\subsection*{Integration Rules for Exponential Functions}
+
+Let $u$ be a differentiable function of $x$.
+\begin{itemize}[label={}, leftmargin=*]
+
+  \item \[
+  \int e^x\,dx=e^x+C
+  \]
+
+  \item \[
+  \int e^u\,du=e^u+C
+  \]
+
+\end{itemize}
+
+%========================================
+% 5.5 Bases Other than e and Applications
+%========================================
+
+\subsection{Bases Other than e and Applications}
+
+\subsection*{Definition of Exponential Function to Base $a$}
+
+If $a$ is a positive real number $(a\neq 1)$ and $x$ is any real number, then the
+\textbf{exponential function to the base $a$} is denoted by $a^x$ and is defined by
+\[
+a^x = e^{(\ln a)x}.
+\]
+
+If $a=1$, then $y=1^x=1$ is a constant function.
+
+\subsection*{Definition of Logarithmic Function to Base $a$}
+
+If $a$ is a positive real number $(a\neq 1)$ and $x$ is any positive real number, then
+the \textbf{logarithmic function to the base $a$} is denoted by $\log_a x$ and is defined as
+\[
+\log_a x=\frac{1}{\ln a}\ln x.
+\]
+
+\subsection*{Properties of Inverse Functions}
+
+\begin{enumerate}[label=\arabic*.]
+  \item $y=a^x$ if and only if $x=\log_a y$
+  \item $a^{\log_a x}=x,$ for $x>0$
+  \item $\log_a a^x=x,$ for all $x$
+\end{enumerate}
+
+\subsection*{Derivatives for Bases Other than $e$}
+
+Let $a$ be a positive real number $(a\neq 1)$, and let $u$ be a differentiable function of $x$.
+\begin{multicols}{2}
+\begin{itemize}[label={}, leftmargin=*]
+
+  \item \[
+  \frac{d}{dx}\bigl[a^x\bigr]=(\ln a)a^x
+  \]
+
+  \item \[
+  \frac{d}{dx}\bigl[a^u\bigr]=(\ln a)a^u\frac{du}{dx}
+  \]
+
+  \item \[
+  \frac{d}{dx}\bigl[\log_a x\bigr]=\frac{1}{(\ln a)x}
+  \]
+
+  \item \[
+  \frac{d}{dx}\bigl[\log_a u\bigr]=\frac{1}{(\ln a)u}\frac{du}{dx}
+  \]
+
+\end{itemize}
+\end{multicols}
+
+
+\subsection*{The Power Rule for Real Exponents}
+
+Let $n$ be any real number, and let $u$ be a differentiable function of $x$.
+\begin{multicols}{2}
+\begin{enumerate}[label={}]
+  \item \[
+  \frac{d}{dx}\bigl[x^n\bigr]=nx^{n-1}
+  \]
+  \item \[
+  \frac{d}{dx}\bigl[u^n\bigr]=nu^{n-1}\frac{du}{dx}
+  \]
+\end{enumerate}
+\end{multicols}
+
+\subsection*{A Limit Involving $e$}
+
+\[
+\lim_{x\to\infty}\left(1+\frac{1}{x}\right)^x
+=\lim_{x\to\infty}\left(\frac{x+1}{x}\right)^x
+=e
+\]
+
+\pagebreak
+
+\subsection*{Summary of Compound Interest Formulas}
+
+In the formulas below, $P$ is the amount deposited, $t$ is the number of years, $A$ is
+the balance after $t$ years, $r$ is the annual interest rate (in decimal form), and $n$
+is the number of compoundings per year.
+\begin{enumerate}[label=\arabic*.]
+  \item Compounded $n$ times per year:
+  \[
+  A=P\left(1+\frac{r}{n}\right)^{nt}
+  \]
+  \item Compounded continuously:
+  \[
+  A=Pe^{rt}
+  \]
+\end{enumerate}
+
+%========================================
+% 5.6 Indeterminate Forms and L'Hopital's Rule
+%========================================
+\subsection{Indeterminate Forms and L'H\^{o}pital's Rule}
+
+\subsection*{The Extended Mean Value Theorem}
+
+If $f$ and $g$ are differentiable on an open interval $(a,b)$ and continuous on $[a,b]$
+such that $g'(x)\neq 0$ for any $x$ in $(a,b)$, then there exists a point $c$ in $(a,b)$
+such that
+\[
+\frac{f'(c)}{g'(c)}=\frac{f(b)-f(a)}{g(b)-g(a)}.
+\]
+
+\subsection*{L'H\^{o}pital's Rule}
+
+Let $f$ and $g$ be functions that are differentiable on an open interval $(a,b)$ containing
+$c$, except possibly at $c$ itself. Assume that $g'(x)\neq 0$ for all $x$ in $(a,b)$, except
+possibly at $c$ itself. If the limit of $f(x)/g(x)$ as $x$ approaches $c$ produces the
+indeterminate form $0/0$, then
+\[
+\lim_{x\to c}\frac{f(x)}{g(x)}=\lim_{x\to c}\frac{f'(x)}{g'(x)}
+\]
+provided the limit on the right exists (or is infinite). This result also applies when the
+limit of $f(x)/g(x)$ as $x$ approaches $c$ produces any one of the indeterminate forms
+$\infty/\infty$, $(-\infty)/\infty$, $\infty/(-\infty)$, or $(-\infty)/(-\infty)$.
+
+%========================================
+% 5.7 Inverse Trigonometric Functions: Differentiation
+%========================================
+\subsection{Inverse Trigonometric Functions: Differentiation}
+
+\subsection*{Definitions of Inverse Trigonometric Functions}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{p{2.9in} p{1.6in} p{2.2in}}
+\textbf{Function} & \textbf{Domain} & \textbf{Range} \\[4pt]
+$y=\arcsin x \ \text{iff}\ \sin y=x$
+& $-1\le x\le 1$
+& $-\dfrac{\pi}{2}\le y\le \dfrac{\pi}{2}$ \\
+
+$y=\arccos x \ \text{iff}\ \cos y=x$
+& $-1\le x\le 1$
+& $0\le y\le \pi$ \\
+
+$y=\arctan x \ \text{iff}\ \tan y=x$
+& $-\infty<x<\infty$
+& $-\dfrac{\pi}{2}<y<\dfrac{\pi}{2}$ \\
+
+$y=\arccot x \ \text{iff}\ \cot y=x$
+& $-\infty<x<\infty$
+& $0<y<\pi$ \\
+
+$y=\arcsec x \ \text{iff}\ \sec y=x$
+& $|x|\ge 1$
+& $0\le y\le \pi,\quad y\neq \dfrac{\pi}{2}$ \\
+
+$y=\arccsc x \ \text{iff}\ \csc y=x$
+& $|x|\ge 1$
+& $-\dfrac{\pi}{2}\le y\le \dfrac{\pi}{2},\quad y\neq 0$
+\end{tabular}
+\end{center}
+
+\subsection*{Properties of Inverse Trigonometric Functions}
+
+If $-1\le x\le 1$ and $-\pi/2\le y\le \pi/2$, then
+\[
+\sin(\arcsin x)=x
+\qquad \text{and} \qquad
+\arcsin(\sin y)=y.
+\]
+If $-\pi/2<y<\pi/2$, then
+\[
+\tan(\arctan x)=x
+\qquad \text{and} \qquad
+\arctan(\tan y)=y.
+\]
+If $|x|\ge 1$ and $0\le y<\pi/2$ or $\pi/2<y\le \pi$, then
+\[
+\sec(\arcsec x)=x
+\qquad \text{and} \qquad
+\arcsec(\sec y)=y.
+\]
+
+Similar properties hold for the other inverse trigonometric functions.
+
+\subsection*{Derivatives of Inverse Trigonometric Functions}
+
+Let $u$ be a differentiable function of $x$.
+\begin{multicols}{2}
+\begin{itemize}[label={}, leftmargin=*]
+
+  \item \[
+  \frac{d}{dx}\bigl[\arcsin u\bigr]
+  =\frac{u'}{\sqrt{1-u^2}}
+  \]
+
+  \item \[
+  \frac{d}{dx}\bigl[\arccos u\bigr]
+  =\frac{-u'}{\sqrt{1-u^2}}
+  \]
+
+  \item \[
+  \frac{d}{dx}\bigl[\arctan u\bigr]
+  =\frac{u'}{1+u^2}
+  \]
+
+  \item \[
+  \frac{d}{dx}\bigl[\arccot u\bigr]
+  =\frac{-u'}{1+u^2}
+  \]
+
+  \item \[
+  \frac{d}{dx}\bigl[\arcsec u\bigr]
+  =\frac{u'}{|u|\sqrt{u^2-1}}
+  \]
+
+  \item \[
+  \frac{d}{dx}\bigl[\arccsc u\bigr]
+  =\frac{-u'}{|u|\sqrt{u^2-1}}
+  \]
+
+\end{itemize}
+\end{multicols}
+
+\pagebreak
+
+\subsection*{Basic Differentiation Rules for Elementary Functions}
+
+\begin{center}
+\begin{multicols}{2}
+\setlength{\parskip}{0pt}
+
+\begin{itemize}[label={}, leftmargin=*]
+\setlength{\itemsep}{2pt}
+
+  \item $\displaystyle \frac{d}{dx}[cu]=cu'$
+
+  \item $\displaystyle \frac{d}{dx}[u\pm v]=u'\pm v'$
+
+  \item $\displaystyle \frac{d}{dx}[uv]=uv'+vu'$
+
+  \item $\displaystyle \frac{d}{dx}\left[\frac{u}{v}\right]=\frac{vu'-uv'}{v^2}$
+
+  \item $\displaystyle \frac{d}{dx}[c]=0$
+
+  \item $\displaystyle \frac{d}{dx}[u^n]=nu^{\,n-1}u'$
+
+  \item $\displaystyle \frac{d}{dx}[x]=1$
+
+  \item $\displaystyle \frac{d}{dx}[|u|]=\frac{u}{|u|}(u'), \quad u\neq 0$
+
+  \item $\displaystyle \frac{d}{dx}[\ln u]=\frac{u'}{u}$
+
+  \item $\displaystyle \frac{d}{dx}[e^u]=e^u u'$
+
+  \item $\displaystyle \frac{d}{dx}[\log_a u]=\frac{u'}{(\ln a)u}$
+
+  \item $\displaystyle \frac{d}{dx}[a^u]=(\ln a)a^u u'$
+
+  \item $\displaystyle \frac{d}{dx}[\sin u]=(\cos u)u'$
+
+  \item $\displaystyle \frac{d}{dx}[\cos u]=-(\sin u)u'$
+
+  \item $\displaystyle \frac{d}{dx}[\tan u]=(\sec^2 u)u'$
+
+  \item $\displaystyle \frac{d}{dx}[\cot u]=-(\csc^2 u)u'$
+
+  \item $\displaystyle \frac{d}{dx}[\sec u]=(\sec u\tan u)u'$
+
+  \item $\displaystyle \frac{d}{dx}[\csc u]=-(\csc u\cot u)u'$
+
+  \item $\displaystyle \frac{d}{dx}[\arcsin u]=\frac{u'}{\sqrt{1-u^2}}$
+
+  \item $\displaystyle \frac{d}{dx}[\arccos u]=\frac{-u'}{\sqrt{1-u^2}}$
+
+  \item $\displaystyle \frac{d}{dx}[\arctan u]=\frac{u'}{1+u^2}$
+
+  \item $\displaystyle \frac{d}{dx}[\arccot u]=\frac{-u'}{1+u^2}$
+
+  \item $\displaystyle \frac{d}{dx}[\arcsec u]=\frac{u'}{|u|\sqrt{u^2-1}}$
+
+  \item $\displaystyle \frac{d}{dx}[\arccsc u]=\frac{-u'}{|u|\sqrt{u^2-1}}$
+
+\end{itemize}
+\end{multicols}
+\end{center}
+
+
+
+
+%========================================
+% 5.8 Inverse Trigonometric Functions: Integration
+%========================================
+
+\subsection{Inverse Trigonometric Functions: Integration}
+
+\subsection*{Integrals Involving Inverse Trigonometric Functions}
+
+Let $u$ be a differentiable function of $x$, and let $a>0$.
+\begin{center}
+\setlength{\parskip}{2pt}
+
+$\displaystyle \int \frac{du}{\sqrt{a^2-u^2}}
+=\arcsin\frac{u}{a}+C$
+
+$\displaystyle \int \frac{du}{a^2+u^2}
+=\frac{1}{a}\arctan\frac{u}{a}+C$
+
+$\displaystyle \int \frac{du}{u\sqrt{u^2-a^2}}
+=\frac{1}{a}\arcsec\frac{|u|}{a}+C$
+
+\end{center}
+
+\pagebreak
+
+\subsection*{Basic Integration Rules ($a>0$)}
+
+\begin{multicols}{2}
+\setlength{\parskip}{0pt}
+
+\begin{itemize}[label={}, leftmargin=*]
+\setlength{\itemsep}{2pt}
+
+  \item $\displaystyle \int kf(u)\,du = k\int f(u)\,du$
+
+  \item $\displaystyle \int [f(u)\pm g(u)]\,du
+  = \int f(u)\,du \pm \int g(u)\,du$
+
+  \item $\displaystyle \int du = u + C$
+
+  \item $\displaystyle \int u^n\,du = \frac{u^{n+1}}{n+1}+C,
+  \quad n\neq -1$
+
+  \item $\displaystyle \int \frac{du}{u} = \ln|u| + C$
+
+  \item $\displaystyle \int e^u\,du = e^u + C$
+
+  \item $\displaystyle \int a^u\,du = \left(\frac{1}{\ln a}\right)a^u + C$
+
+  \item $\displaystyle \int \sin u\,du = -\cos u + C$
+
+  \item $\displaystyle \int \cos u\,du = \sin u + C$
+
+  \item $\displaystyle \int \tan u\,du = -\ln|\cos u| + C$
+
+  \item $\displaystyle \int \cot u\,du = \ln|\sin u| + C$
+
+  \item $\displaystyle \int \sec u\,du = \ln|\sec u+\tan u| + C$
+
+  \item $\displaystyle \int \csc u\,du = -\ln|\csc u+\cot u| + C$
+
+  \item $\displaystyle \int \sec^2 u\,du = \tan u + C$
+
+  \item $\displaystyle \int \csc^2 u\,du = -\cot u + C$
+
+  \item $\displaystyle \int \sec u\tan u\,du = \sec u + C$
+
+  \item $\displaystyle \int \csc u\cot u\,du = -\csc u + C$
+
+  \item $\displaystyle \int \frac{du}{\sqrt{a^2-u^2}}
+  = \arcsin\frac{u}{a} + C$
+
+  \item $\displaystyle \int \frac{du}{a^2+u^2}
+  = \frac{1}{a}\arctan\frac{u}{a} + C$
+
+  \item $\displaystyle \int \frac{du}{u\sqrt{u^2-a^2}}
+  = \frac{1}{a}\arcsec\frac{|u|}{a} + C$
+
+\end{itemize}
+\end{multicols}
+
+
+%========================================
+% 5.8 Hyperbolic Functions
+%========================================
+\subsection{Hyperbolic Functions}
+
+\subsection*{Definitions of the Hyperbolic Functions}
+
+\begin{multicols}{2}
+\[
+\sinh x=\frac{e^x-e^{-x}}{2}
+\]
+
+\[
+\cosh x=\frac{e^x+e^{-x}}{2}
+\]
+
+\[
+\tanh x=\frac{\sinh x}{\cosh x}
+\]
+
+\[
+\csch x=\frac{1}{\sinh x}, \quad x\neq 0
+\]
+
+\[
+\sech x=\frac{1}{\cosh x}
+\]
+
+\[
+\coth x=\frac{1}{\tanh x}, \quad x\neq 0
+\]
+\end{multicols}
+
+\pagebreak
+
+\subsection*{Hyperbolic Identities}
+
+\begin{multicols}{2}
+\[
+\cosh^2x-\sinh^2x=1
+\]
+
+\[
+\tanh^2x+\sech^2x=1
+\]
+
+\[
+\coth^2x-\csch^2x=1
+\]
+
+\[
+\sinh^2x=\frac{-1+\cosh 2x}{2}
+\]
+
+\[
+\sinh 2x=2\sinh x\cosh x
+\]
+
+\[
+\sinh(x+y)=\sinh x\cosh y+\cosh x\sinh y
+\]
+
+\[
+\sinh(x-y)=\sinh x\cosh y-\cosh x\sinh y
+\]
+
+\[
+\cosh(x+y)=\cosh x\cosh y+\sinh x\sinh y
+\]
+
+\[
+\cosh(x-y)=\cosh x\cosh y-\sinh x\sinh y
+\]
+
+\[
+\cosh^2x=\frac{1+\cosh 2x}{2}
+\]
+
+\[
+\cosh 2x=\cosh^2x+\sinh^2x
+\]
+\end{multicols}
+
+\subsection*{Derivatives and Integrals of Hyperbolic Functions}
+
+Let $u$ be a differentiable function of $x$.
+\begin{multicols}{2}
+\[
+\frac{d}{dx}[\sinh u]=(\cosh u)u'
+\]
+
+\[
+\frac{d}{dx}[\cosh u]=(\sinh u)u'
+\]
+
+\[
+\frac{d}{dx}[\tanh u]=(\sech^2u)u'
+\]
+
+\[
+\frac{d}{dx}[\coth u]=-(\csch^2u)u'
+\]
+
+\[
+\frac{d}{dx}[\sech u]=-(\sech u\,\tanh u)u'
+\]
+
+\[
+\frac{d}{dx}[\csch u]=-(\csch u\,\coth u)u'
+\]
+
+\[
+\int \cosh u\,du=\sinh u+C
+\]
+
+\[
+\int \sinh u\,du=\cosh u+C
+\]
+
+\[
+\int \sech^2u\,du=\tanh u+C
+\]
+
+\[
+\int \csch^2u\,du=-\coth u+C
+\]
+
+\[
+\int \sech u\,\tanh u\,du=-\sech u+C
+\]
+
+\[
+\int \csch u\,\coth u\,du=-\csch u+C
+\]
+\end{multicols}
+
+\subsection*{Inverse Hyperbolic Functions}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{p{3.6in} p{2.0in}}
+\textbf{Function} & \textbf{Domain} \\[4pt]
+$\sinh^{-1}x=\ln\!\left(x+\sqrt{x^2+1}\right)$
+& $(-\infty,\infty)$ \\
+
+$\cosh^{-1}x=\ln\!\left(x+\sqrt{x^2-1}\right)$
+& $[1,\infty)$ \\
+
+$\tanh^{-1}x=\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$
+& $(-1,1)$ \\
+
+$\coth^{-1}x=\dfrac{1}{2}\ln\!\left(\dfrac{x+1}{x-1}\right)$
+& $(-\infty,-1)\cup(1,\infty)$ \\
+
+$\sech^{-1}x=\ln\!\left(\dfrac{1+\sqrt{1-x^2}}{x}\right)$
+& $(0,1]$ \\
+
+$\csch^{-1}x=\ln\!\left(\dfrac{1}{x}+\dfrac{\sqrt{1+x^2}}{|x|}\right)$
+& $(-\infty,0)\cup(0,\infty)$
+\end{tabular}
+\end{center}
+
+\subsection*{Differentiation and Integration Involving Inverse Hyperbolic Functions}
+
+Let $u$ be a differentiable function of $x$.
+\begin{multicols}{2}
+\[
+\frac{d}{dx}[\sinh^{-1}u]=\frac{u'}{\sqrt{u^2+1}}
+\]
+
+\[
+\frac{d}{dx}[\cosh^{-1}u]=\frac{u'}{\sqrt{u^2-1}}
+\]
+
+\[
+\frac{d}{dx}[\tanh^{-1}u]=\frac{u'}{1-u^2}
+\]
+
+\[
+\frac{d}{dx}[\coth^{-1}u]=\frac{u'}{1-u^2}
+\]
+
+\[
+\frac{d}{dx}[\sech^{-1}u]=\frac{-u'}{u\sqrt{1-u^2}}
+\]
+
+\[
+\frac{d}{dx}[\csch^{-1}u]=\frac{-u'}{|u|\sqrt{1+u^2}}
+\]
+\end{multicols}
+
+\[
+\int \frac{du}{\sqrt{u^2\pm a^2}}
+=\ln\!\left(u+\sqrt{u^2\pm a^2}\right)+C
+\]
+
+\[
+\int \frac{du}{a^2-u^2}
+=\frac{1}{2a}\ln\left|\frac{a+u}{a-u}\right|+C
+\]
+
+\[
+\int \frac{du}{u\sqrt{a^2\pm u^2}}
+=-\frac{1}{a}\ln\!\left(\frac{a+\sqrt{a^2\pm u^2}}{|u|}\right)+C
+\]
